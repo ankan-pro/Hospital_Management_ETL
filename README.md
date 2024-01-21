@@ -5,14 +5,14 @@ Hospital Management
 
 
 
-	Prepared By	Name	ANKAN GHOSH
+	Prepared By Name **ANKAN GHOSH**
 			
 
 
  
 **Table of Contents**
 **Contents**
-**1 Introduction	**
+**1 Introduction**
 1.1Scope of the system
 	
 2 Approach and Mapping Logic	
@@ -21,7 +21,6 @@ Hospital Management
 2.1 Appointment Module
 2.1 Insurance Module	
 2.1 Billing Module	
-3 Terms & Conditions	
 
  
 **1.Introduction**
@@ -131,7 +130,5 @@ The project Job View:
 
 
 
-****3. Terms & Conditions****
-
-GenCs shall be solely responsible for all its acts and omissions under this program. GenCs will comply at all times with all applicable laws. GenCs shall not use Cognizant’s name, logo and trademark in any promotional materials or other communications with third parties without the prior written consent of Cognizant. Any materials used by GenCs in relation to program will not infringe the copyrights, trademarks, patents, trade secrets or other intellectual property rights, privacy or similar rights of any person or entity. GenCs agrees not to post, draw, make, display any content that is threatening, libelous, obscene, defamatory, abusive, pornographic, or advocates/encourages any conduct that could constitute a criminal offence or give rise to any civil liability. Cognizant its associates’ personal details including but not limited to name, address, contact number shall not be shared or forwarded to any third party, without prior written consent of Cognizant, its associates. All intellectual property provided by Cognizant as part of program shall be owned exclusively by Cognizant. Intern shall indemnify, defend and indemnify Cognizant its associates, officers, directors from and against any claims, demands, loss, damage, liability, causes of action, judgments, or costs and expenses of every nature (including attorney’s fees and expenses) incurred by Cognizant based on any claim that any breach of terms and conditions of this program.
+                                                                                      **--END--**
 
