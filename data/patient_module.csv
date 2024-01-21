@@ -1,0 +1,16 @@
+Patient_ID,Name,Date_of_Birth,Gender,Address,City,Country,Phone,Insurance_ID
+1001,John Doe,1985-03-15,Male,123 Main St,New York,INDIA,555-123-4567,
+1002,Alice Johnson,1990-08-21,Female,456 Oak Ave,Los Angeles,USA,444-987-6543,1002
+1003,Michael Williams,1979-11-10,Male,789 Maple Rd,Chicago,USA,333-456-7890,1003
+1004,Emily Brown,1995-06-30,Female,101 Elm St,Houston,USA,666-789-4561,1004
+1005,Robert Miller,1988-02-25,Male,202 Cedar Ave,Phoenix,USA,777-654-3219,1005
+1006,Sophia Davis,1980-09-18,Female,303 Pine Rd,Philadelphia,USA,888-321-6540,1006
+1007,James Garcia,1976-12-05,Male,404 Birch St,San Antonio,USA,999-987-1236,
+1008,Lily Martinez,1992-07-08,Female,505 Willow Ave,San Diego,USA,222-654-9873,1008
+1009,Daniel Brown,1982-04-12,Male,606 Spruce Rd,Dallas,INDIA,111-852-9637,
+1010,Ava Lee,1987-01-03,Female,707 Chestnut St,San Jose,INDIA,999-741-8528,
+1011,Matthew Wilson,1998-10-27,Male,808 Hickory Ave,Austin,INDIA,888-369-8520,
+1012,Olivia Taylor,1983-07-14,Female,909 Sycamore Rd,Jacksonville,USA,777-147-2583,1002
+1013,William Jones,1993-04-19,Male,1010 Poplar St,San Francisco,USA,666-258-3694,1003
+1014,Emma White,1991-11-22,Female,1111 Cypress Ave,Indianapolis,USA,555-963-1472,1004
+1015,Noah Rodriguez,1950-08-11,Male,1212 Juniper Rd,Columbus,USA,444-369-1475,1005
