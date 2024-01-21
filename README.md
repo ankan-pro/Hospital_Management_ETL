@@ -50,6 +50,7 @@ Expression: !Patient.Country.equals("INDIA")&&Patient.Insurance_ID ==null
 
 2) First I have mapped all patients details on the output in tMap. . Then in the expression builder I checked if patient details above age 50. 
 Expression: (TalendDate.getCurrentDate().getYear()-Patient.Date_of_Birth .getYear())>50
+![image](https://github.com/ankan-pro/Hospital_Management_ETL/assets/104769124/2cec8d1b-273f-48b7-9f5b-89b9e320641b)
 
  
 **2.1 Physician Module**
@@ -64,11 +65,13 @@ Expression:
 Physician.Designation.equals("Surgeon")&& 
 TalendDate.compareDate(Physician.Date_of_Joining , TalendDate.parseDate("yyyy-MM-dd", "2000-01-01")) >= 0 && 
 TalendDate.compareDate(Physician.Date_of_Joining , TalendDate.parseDate("yyyy-MM-dd", "2010-12-31")) <= 0
+![image](https://github.com/ankan-pro/Hospital_Management_ETL/assets/104769124/993c9700-b6b7-47ea-9dac-39b7b94fefbc)
 
 
 2)First, I have mapped the Physician details to the Output table. Then from the tMap map the output to the tSortRow component where I short the columns based on experience. Then store the report using delimited file. 
 3)In output table I created a column isHod and use expression logic to check if He is head of the department or not.
 Expression: Physician.Designation.equals("Department Head")?"Yes":"No"
+![image](https://github.com/ankan-pro/Hospital_Management_ETL/assets/104769124/8a51f577-0b76-4697-8f12-ce254d2887f9)
 
 **2.1 Appointment Module**
 Functional Requirements 
@@ -90,7 +93,8 @@ Functional Requirements
 Expression: for variable
 Patient.Insurance_ID==null?0:Insurance.Maximum_Coverage_Amount
 Then Var.var1>2,00,000
- 
+ ![image](https://github.com/ankan-pro/Hospital_Management_ETL/assets/104769124/8c902809-0670-459c-a149-c9450bdf94a3)
+
 2)I have mapped Insurance name, insurance_ID and Patient_ID to the output of the tMap. There I have created a column Insurance_count.Then I used tAggregate row to group data using Insurance id and name and count patient_ID  for each insurance.
 **2.1 Billing Module**
 Functional Requirements
@@ -102,12 +106,14 @@ Functional Requirements
 
 
 1)I mapped all patient details to output and in expression builder checked the required filter operation.
+![image](https://github.com/ankan-pro/Hospital_Management_ETL/assets/104769124/f5813854-6df1-4108-b4ba-8920bcf8ac33)
 
 2)For this, I have first created a variable to handle the null value for amount.
 Expression: Insurance.Maximum_Coverage_Amount == null?0:Insurance.Maximum_Coverage_Amount
 Then used this variable in new column as actual amount and used expression to check the scenario.
 Expression: Fact.Amount>Var.amt_cvg?(Fact.Amount-Var.amt_cvg):0
- 
+ ![image](https://github.com/ankan-pro/Hospital_Management_ETL/assets/104769124/29e491b9-9630-4336-8dce-63818755d19e)
+
 
 3)I mapped physician_ID, Name and amount to the output .Then I have used taggregateRow to groupby physician_ID and name.In the operation I used sum function of the Amount.Then I used  tSort row to sort the data descending based on amount and then used tSample row to take the highest one.
 4)I have mapped patients name and id then used expression to filter the scenario.
